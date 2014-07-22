@@ -1,0 +1,2 @@
+roles: monitoring.server,monitoring.client
+entry: monitoring.server,monitoring.client
