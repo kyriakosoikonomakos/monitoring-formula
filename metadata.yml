@@ -1,11 +1,25 @@
+# States we need to include in top.sls
 entry: 
   - monitoring.server
   - monitoring.client
+
+# Grains we need to set
 grains:
   roles:
     - monitoring.server
     - monitoring.client
+
+# Formulas this formula depends on.
+# If this is present formula-requirements.txt is ignored
 dependencies:
   - git@github.com:ministryofjustice/sensu-formula.git
   - git@github.com:ministryofjustice/logstash-formula.git
   - git@github.com:ministryofjustice/metrics-formula.git
+
+# Additional states that we should consider prereqs for testing
+test_states:
+  monitoring_local:
+    host.present:
+      - ip: 127.0.0.1
+      - names:
+        - monitoring.local
