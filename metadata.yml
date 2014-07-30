@@ -1,0 +1,11 @@
+entry: 
+  - monitoring.server
+  - monitoring.client
+grains:
+  roles:
+    - monitoring.server
+    - monitoring.client
+dependencies:
+  - git@github.com:ministryofjustice/sensu-formula.git
+  - git@github.com:ministryofjustice/logstash-formula.git
+  - git@github.com:ministryofjustice/metrics-formula.git
