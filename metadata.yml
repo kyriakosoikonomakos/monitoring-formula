@@ -12,7 +12,7 @@ grains:
 # Formulas this formula depends on.
 # If this is present formula-requirements.txt is ignored
 dependencies:
-  - git@github.com:ministryofjustice/sensu-formula.git==3.2.1
+  - git@github.com:ministryofjustice/sensu-formula.git==v3.2.1
   - git@github.com:ministryofjustice/logstash-formula.git==redis-version
   - git@github.com:ministryofjustice/metrics-formula.git==d552c8ad02bd3c3f84c3fbe1178ee7a9597353d2
 
