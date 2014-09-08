@@ -23,3 +23,7 @@ test_states:
       - ip: 127.0.0.1
       - names:
         - monitoring.local
+
+test_pillars:
+  blah: 123
+  test: lalala
